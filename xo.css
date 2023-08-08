@@ -1,0 +1,90 @@
+body
+{
+    background: gray;
+   
+}
+.board
+{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 5px;
+    background: white;
+    width: fit-content;
+    position: absolute;
+    top:60%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.board .case
+{
+    background-color: black;
+    width:130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:120px ;
+
+}
+.gamename
+{
+position: absolute;
+font-size: 60px;
+font-style: italic;
+color: white;
+text-shadow: 2px 4px black;
+transform: translate(550px);
+}
+.hider 
+{
+position:absolute;
+}
+.player
+{
+    position: absolute;
+    background-color: rgba(88, 88, 90, 0.127);
+    width: 130px;
+    height: 100px;
+    transform: translate(550px,90px);
+}
+.x
+{
+    position: absolute;
+    font-size: 150px;
+    color: red;
+    transform: translate(30px,-50px);
+}
+.o
+{
+    position: absolute;
+    font-size: 150px;
+    color: rgb(52, 4, 244);
+    transform: translate(30px,-50px);
+}
+.joue
+{
+    position: absolute;
+    font-size: 60px;
+font-style: italic;
+color: rgba(102, 101, 101, 0.127);
+text-shadow: 2px 4px black;
+transform: translate(700px,100px);
+width: 400px;
+}
+.resultat
+{
+    width: 400px;
+    height: 60px;
+    position: absolute;
+    background-color:gray ;
+    font-size: 80px;
+font-style: italic;
+color: black;
+transform: translate(560px,620px);
+text-align: center;
+}
+.restart
+{
+    position: absolute;
+    transform: translate(100px,200px);
+}
